@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard'
 const Services = () => {
   return (
     <div id="services"  className='pt-16 pb-16 bg-[#0f0715]'>
-        <SectionHeading>services</SectionHeading>
+        <SectionHeading>My Skills</SectionHeading>
 <div data-aos="fade-up" data-aos-delay="100" className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 w-[80%] mx-auto items-center mt-20'>
 {servicesData.map((service,i)=>{
     return <div 

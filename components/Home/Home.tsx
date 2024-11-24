@@ -28,9 +28,8 @@ initAos()
       <Hero />
       <About />
       <Services />
-      <Skills />
       <Project />
-      <Contact />
+        <Contact/>
     </div>
   )
 }

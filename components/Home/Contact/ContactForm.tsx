@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
 
-// Define the type for the form data
 interface FormData {
- from_name: string;
- last_name: string;
+  from_name: string;
+  last_name: string;
   email: string;
   phone: string;
   service: string;
@@ -20,10 +20,10 @@ const ContactForm = () => {
     service: '',
     message: '',
   });
-
+  
+  const [isSent, setIsSent] = useState(false); // New state to track submission
   const formRef = useRef<HTMLFormElement>(null);
 
-  // Handle input change and update the corresponding formData
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -32,7 +32,6 @@ const ContactForm = () => {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -44,12 +43,18 @@ const ContactForm = () => {
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID || ""
       )
       .then((result) => {
-        console.log('Email sent successfully:', result.text);
-        alert('Your message has been sent!');
+        setFormData({
+          from_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        }); // Clear form
+        setIsSent(true); // Set state to true after successful submission
       })
       .catch((error) => {
-        console.error('Error sending email:', error.text);
-        alert('Something went wrong. Please try again later.');
+        setIsSent(false); // Reset in case of failure
       });
     }
   };
@@ -57,7 +62,6 @@ const ContactForm = () => {
   return (
     <div className='bg-[#140c1c] rounded-lg p-4 sm:p-10'>
       <h1 className='text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold'>Let's Work Together!</h1>
-      <p className='text-gray-200 mt-3 lg:text-base text-xs md:text-sm'>Lorem Ipsum</p>
       <form ref={formRef} onSubmit={handleSubmit} className='mt-8 block w-full overflow-hidden'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
           <input
@@ -119,14 +123,15 @@ const ContactForm = () => {
         <div className='mt-4'>
           <button
             type="submit"
-            className='px-8 py-3.5 bg-[#7947df] text-white hover:bg-[#5c2fb7] transition-all duration-50 rounded-full'
+            disabled={isSent} // Disable the button once the form is submitted
+            className={`px-8 py-3.5 ${isSent ? 'bg-[#7947df] animate-pulse' : 'bg-[#7947df]'} text-white hover:bg-[#5c2fb7] transition-all duration-50 rounded-full`}
           >
-            Send Message
+            {isSent ? "Thank you  🎉!" : "Send Message"}
           </button>
         </div>
       </form>
     </div>
   );
-}
+};
 
 export default ContactForm;

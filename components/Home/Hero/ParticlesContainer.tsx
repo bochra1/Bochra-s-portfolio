@@ -13,7 +13,7 @@ const ParticlesContainer = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 w-full h-full z-10 ">
+    <div className="absolute inset-0 pointer-events-none ">
       {/* Particles component is now scoped to its parent */}
       <Particles
         id="tsparticles"
@@ -25,6 +25,10 @@ const ParticlesContainer = () => {
               value: "transparent", // Same as Hero background for seamless blending
             },
           },
+          fullScreen: {
+            enable: false,
+            zIndex: -1,
+            },
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -66,7 +70,7 @@ const ParticlesContainer = () => {
                 default: "out",
               },
               random: false,
-              speed: 1,
+              speed: 0.5,
               straight: false,
             },
             number: {

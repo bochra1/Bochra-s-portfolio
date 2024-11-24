@@ -31,7 +31,6 @@ export default function RootLayout({
 
         <ResponsiveNavbar />
         {children}
-        <Footer />
         <ScrollToTpp />
       </body>
     </html>

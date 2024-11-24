@@ -2,14 +2,14 @@ export const BaseInfo = {
     name: "Bochra",
     position: "Full Stack Web Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
+      "Creating seamless digital experiences with expertise in React, Next.js, Node.js, Angular and Spring Boot. Passionate about building user-friendly, scalable, and innovative web applications that make a difference.",
     profilePic: "/images/photo.jpg",
   };
   
   export const aboutInfo = {
     title: "Crafting Web Application with Passion and Precision",
     description:
-      "At webdev warriors, we’re a dedicated team of designers and developers committed to delivering tailored web solutions. With a blend of creativity and technical expertise, we help businesses elevate their online presence and achieve their goals",
+      "As a passionate junior software engineer, I thrive on learning new technologies and turning creative ideas into seamless, high-quality user experiences. With expertise in React.js, Next.js, Angular, and Spring Boot, I specialize in building engaging and intuitive software solutions using JavaScript and TypeScript. On the interpersonal side, I am a collaborative team player who can work with anyone while maintaining a positive and energetic attitude",
     client: "3+",
     experience: "1+",
     project: "20+",
@@ -19,47 +19,53 @@ export const BaseInfo = {
   export const servicesData = [
     {
       id: 1,
-      title: " Web Applications",
-      description: "Tailored web apps built with the latest technologies.",
+      title: " Front End",
+      description: "React, Vue, Angular, Angular Js",
       icon: "/images/s1.png",
     },
     {
       id: 2,
-      title: "E-commerce Websites",
+      title: "Back End",
       description:
-        "Secure online stores with user-friendly shopping and payments.",
+        "Node js, Express Js, .Net, Next, Spring Boot, MySQL, MongoDB",
       icon: "/images/s2.png",
     },
     {
       id: 3,
       title: "API Integration",
       description:
-        "Seamless integration for smooth data sharing and functionality.",
+        "Rest API, GraphQl",
       icon: "/images/s3.png",
     },
     {
       id: 4,
       title: "User Interfaces",
       description:
-        "Engaging, responsive front-end designs for better user experiences.",
+        "Tailwind CSS, Bootstrap, Mui",
       icon: "/images/s4.png",
     },
-    {
+   /* {
       id: 5,
       title: "Real-Time Features",
       description: "Add live chat, notifications, and real-time data updates.",
       icon: "/images/s6.png",
+    },*/
+    {
+      id: 5,
+      title: "State Management",
+      description: "Redux, Zustand.",
+      icon: "/images/s6.png",
     },
     {
       id: 6,
-      title: "Speed Optimization",
-      description: "Boost performance with faster load times and optimization.",
+      title: "Programing language",
+      description: "JavaScript, TypeScript, C#, Java, PHP.",
       icon: "/images/s7.png",
     },
     {
       id: 7,
-      title: "Test Automation",
-      description: "Easy content management systems with flexible controls.",
+      title: "Other Tools",
+      description: "Docker, CI/CD, Selenium ",
       icon: "/images/s8.png",
     },
   ];
@@ -86,22 +92,26 @@ export const BaseInfo = {
       company: 'Xpermedia',
       position: 'Front-End Web Developer',
       icon: '/images/current-company.png',
+      mission:"Integrated and enhanced real-time features using WebRTC and WebSocket technologies, including live media streaming, interactive chat, real-time notifications, and dynamic data updates."
     },
     {
       company: 'Linedata',
       position: 'Full-Stack Web Developer Intern',
       icon: '/images/linedata.png',
+      mission:"Automated financial reporting processes using Selenium scripts, reducing manual processing time by 50%."
     },
    
     {
       company: 'Xpermedia',
       position: 'Full-Stack Web Developer Intern',
       icon: '/images/mobilite.png',
+      mission:"Developed and containerized an online recruitment platform using Docker, ensuring scalability and streamlined deployment."
     },
     {
       company: 'Mobelite',
       position: 'PHP Web Developer Intern',
       icon: '/images/mobilite.png',
+      mission:"Developed an application for intern recruitment, enhancing the hiring process and candidate management."
     },
   ];
   
@@ -109,27 +119,36 @@ export const BaseInfo = {
     {
       id: 1,
       image: "/images/p1.png",
-      url: "https://agency-opal-eight.vercel.app/",
+      url: "https://github.com/bochra1/recruitment-platform",
+      description:"Plateforme de recrutement en ligne. Technologies: React JS,Node Js"
     },
     {
       id: 2,
       image: "/images/p2.png",
-      url: "https://burger-pearl.vercel.app/",
+      url: "https://github.com/bochra1/Employee_management",
+      description:"Plateforme de gestion des employés. Technologies: JavaFx, Scene Builder"
+
     },
     {
       id: 3,
       image: "/images/p3.png",
-      url: "https://game-ecommerce-yt.vercel.app/",
+      url: "https://github.com/bochra1?tab=repositories",
+      description:"Plateforme de gestion des stagiaires. Technologies: Symfony, MySQL"
+
     },
     {
       id: 4,
       image: "/images/p4.png",
-      url: "https://elearning-yt.vercel.app/",
+      url: "https://github.com/bochra1/E-commerce-shop",
+      description:"Plateforme de vente en ligne et personnalisation des produits. Technologies: Next, Prisma."
+
     },
     {
       id: 5,
       image: "/images/p5.png",
-      url: "https://invest-peach.vercel.app/",
+      url: "https://github.com/bochra1/E-learning-platform",
+      description:"Plateforme de cours en ligne. Technologies: SpringBoot, Angular"
+
     }
   ];
   
@@ -245,4 +264,5 @@ export const BaseInfo = {
   export const contactData = {
     phone: "+216 51 961 492",
     email: "bochra.labben890@gmail.com",
+    linkedin:"https://www.linkedin.com/in/bochra-labben-a6006b1b8/"
   };

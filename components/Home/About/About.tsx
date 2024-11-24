@@ -44,18 +44,20 @@ const About = () => {
 
           {/* Work Experience Section */}
           <div>
-            <h2 className="text-white text-2xl font-semibold mb-6">Work Experience</h2>
+            <h2 className="text-bg text-[26px] sm:text-1xl md:text-22xl lg:text-3xl font-bold text-gray-200">Work Experience</h2>
             <div className="space-y-8">
               {workData.map((work, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   {/* Icon */}
-                  <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10  p-2 bg-blue-800 rounded-full flex items-center justify-center">
                     <FaBriefcase className="text-white text-lg" />
                   </div>
                   {/* Text */}
                   <div>
                     <p className="text-white font-bold text-lg">{work.company}</p>
                     <p className="text-gray-400 text-sm italic">{work.position}</p>
+                    <p className="text-gray-400 text-sm italic">{work.mission}</p>
+
                   </div>
                 </div>
               ))}
