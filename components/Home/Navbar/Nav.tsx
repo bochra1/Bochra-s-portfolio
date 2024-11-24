@@ -1,6 +1,5 @@
 'use client'
 import { navLinks } from '@/constant/constant'
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'

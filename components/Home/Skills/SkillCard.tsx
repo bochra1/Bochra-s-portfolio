@@ -5,11 +5,10 @@ type Props ={
         id: number;
         title: string;
         image: string;
-        percent: string;
     }
 }
 const SkillCard = ({skill}:Props) => {
-    const {image,percent,title}= skill
+    const {image,title}= skill
   return (
     <div className='pb-6'>
         

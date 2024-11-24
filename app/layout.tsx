@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Sora } from "next/font/google";
 import { ResponsiveNavbar } from "@/components/Home/Navbar/ResponsiveNavbar";
-import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTpp from "@/components/Helper/ScrollToTpp";
-import AnimatedCursor from "react-animated-cursor"
 
 const geistSans = Sora({
   subsets: ['latin'],

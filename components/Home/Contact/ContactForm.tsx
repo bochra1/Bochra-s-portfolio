@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { toast } from 'react-toastify';
 
 interface FormData {
   from_name: string;
@@ -42,7 +41,7 @@ const ContactForm = () => {
         formRef.current as HTMLFormElement,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID || ""
       )
-      .then((result) => {
+      .then(() => {
         setFormData({
           from_name: "",
           last_name: "",
@@ -54,6 +53,7 @@ const ContactForm = () => {
         setIsSent(true); // Set state to true after successful submission
       })
       .catch((error) => {
+console.log(error)
         setIsSent(false); // Reset in case of failure
       });
     }
@@ -61,7 +61,7 @@ const ContactForm = () => {
 
   return (
     <div className='bg-[#140c1c] rounded-lg p-4 sm:p-10'>
-      <h1 className='text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold'>Let's Work Together!</h1>
+      <h1 className='text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold'>{"Let's Work Together!"}</h1>
       <form ref={formRef} onSubmit={handleSubmit} className='mt-8 block w-full overflow-hidden'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
           <input

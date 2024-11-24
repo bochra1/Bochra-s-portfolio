@@ -1,7 +1,7 @@
 import { contactData } from '@/data/data'
 import Link from 'next/link'
 import React from 'react'
-import { FaEnvelope, FaLinkedin, FaMap, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin, FaPhone } from 'react-icons/fa'
 
 const ContactInfo = () => {
   return (

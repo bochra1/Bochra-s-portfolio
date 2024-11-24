@@ -1,7 +1,6 @@
 import SectionHeading from '@/components/Helper/SectionHeading'
 import React from 'react'
 import Slider from './Slider'
-import ParticlesContainer from '../Hero/ParticlesContainer'
 
 const Project = () => {
   return (
