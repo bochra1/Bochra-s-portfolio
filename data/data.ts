@@ -9,7 +9,7 @@ export const BaseInfo = {
   export const aboutInfo = {
     title: "Crafting Web Application with Passion and Precision",
     description:
-      "As a passionate junior software engineer, I thrive on learning new technologies and turning creative ideas into seamless, high-quality user experiences. With expertise in React.js, Next.js, Angular, and Spring Boot, I specialize in building engaging and intuitive software solutions using JavaScript and TypeScript. On the interpersonal side, I am a collaborative team player who can work with anyone while maintaining a positive and energetic attitude",
+      "As a passionate junior software engineer, I thrive on learning new technologies and turning creative ideas into seamless, high-quality user experiences. With expertise in React.js, Next.js, Angular, and Spring Boot, I specialize in building engaging and intuitive software solutions using JavaScript and TypeScript. On the interpersonal side, I am a collaborative team player who can work with anyone while maintaining a positive and energetic attitude.",
     client: "3+",
     experience: "1+",
     project: "20+",
@@ -20,28 +20,28 @@ export const BaseInfo = {
     {
       id: 1,
       title: " Front End",
-      description: "React, Vue, Angular, Angular Js",
+      description: "React, Vue, Angular, Next Js",
       icon: "/images/s1.png",
     },
     {
       id: 2,
       title: "Back End",
       description:
-        "Node js, Express Js, .Net, Next, Spring Boot, MySQL, MongoDB",
+        "Node js, .Net, Spring Boot, MySQL, MongoDB, PostgreS",
       icon: "/images/s2.png",
     },
     {
       id: 3,
       title: "API Integration",
       description:
-        "Rest API, GraphQl",
+        "REST API, GraphQL",
       icon: "/images/s3.png",
     },
     {
       id: 4,
       title: "User Interfaces",
       description:
-        "Tailwind CSS, Bootstrap, Mui",
+        "Tailwind CSS, Bootstrap, MUI",
       icon: "/images/s4.png",
     },
    /* {
@@ -58,7 +58,7 @@ export const BaseInfo = {
     },
     {
       id: 6,
-      title: "Programing language",
+      title: "Programming language",
       description: "JavaScript, TypeScript, C#, Java, PHP.",
       icon: "/images/s7.png",
     },
@@ -120,37 +120,34 @@ export const BaseInfo = {
       id: 1,
       image: "/images/p1.png",
       url: "https://github.com/bochra1/recruitment-platform",
-      description:"Plateforme de recrutement en ligne. Technologies: React JS,Node Js"
+      description: "Online recruitment platform. Technologies: React JS, Node JS"
     },
     {
       id: 2,
       image: "/images/p2.png",
       url: "https://github.com/bochra1/Employee_management",
-      description:"Plateforme de gestion des employés. Technologies: JavaFx, Scene Builder"
-
+      description: "Employee management platform. Technologies: JavaFx, Scene Builder"
     },
     {
       id: 3,
       image: "/images/p3.png",
       url: "https://github.com/bochra1?tab=repositories",
-      description:"Plateforme de gestion des stagiaires. Technologies: Symfony, MySQL"
-
+      description: "Internship management platform. Technologies: Symfony, MySQL"
     },
     {
       id: 4,
       image: "/images/p4.png",
       url: "https://github.com/bochra1/E-commerce-shop",
-      description:"Plateforme de vente en ligne et personnalisation des produits. Technologies: Next, Prisma."
-
+      description: "E-commerce platform with product customization. Technologies: Next.js, PostgreSQL, Stripe."
     },
     {
       id: 5,
       image: "/images/p5.png",
       url: "https://github.com/bochra1/E-learning-platform",
-      description:"Plateforme de cours en ligne. Technologies: SpringBoot, Angular"
-
+      description: "Online learning platform. Technologies: Spring Boot, Angular"
     }
-  ];
+];
+
   
   export const skillsData = [
     {
@@ -179,7 +176,7 @@ export const BaseInfo = {
     },
     {
       id: 5,
-      title: "Postgres",
+      title: "PostgreSQL",
       image: "/images/PostgreSQL.png",
       percent: "67%",
     },
@@ -215,7 +212,7 @@ export const BaseInfo = {
     },
     {
       id: 11,
-      title: "MySql",
+      title: "MySQL",
       image: "/images/react.svg",
       percent: "90%",
     },

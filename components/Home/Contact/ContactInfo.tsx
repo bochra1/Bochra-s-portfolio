@@ -11,7 +11,7 @@ const ContactInfo = () => {
                 <FaPhone className='w-4 h-4 md:w-7 md:h-7 text-white'/>
            </div>
            <div>
-            <h1 className='text-large sm:text-xl text-white font-bold'>Phone</h1>
+            <h1 className='text-base sm:text-xl text-white font-bold'>Phone</h1>
             <h1 className='text-base sm:text-lg text-white opacity-70'>{contactData.phone}</h1>
            </div>
         </div>
@@ -20,7 +20,7 @@ const ContactInfo = () => {
                 <FaEnvelope className='w-4 h-4 md:w-7 md:h-7 text-white'/>
            </div>
            <div>
-            <h1 className='text-large sm:text-xl text-white font-bold'>Email</h1>
+            <h1 className='text-base sm:text-xl text-white font-bold'>Email</h1>
             <h1 className='text-base sm:text-lg text-white opacity-70'>{contactData.email}</h1>
            </div>
         </div>
@@ -29,7 +29,7 @@ const ContactInfo = () => {
                 <FaLinkedin className='w-4 h-4 md:w-7 md:h-7 text-white'/>
            </div>
            <div>
-            <h1 className='text-large sm:text-xl text-white font-bold'>Linkedin</h1>
+            <h1 className='text-base sm:text-xl text-white font-bold'>Linkedin</h1>
             <Link key="" href={contactData.linkedin} >
 
             <h1 className='text-base sm:text-lg text-white opacity-70'>{contactData.linkedin}</h1></Link>
