@@ -2,7 +2,7 @@
 import { Particles } from "react-tsparticles";
 import { useCallback } from "react";
 import React from "react";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
 const ParticlesContainer = () => {
