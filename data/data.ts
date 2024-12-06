@@ -138,7 +138,7 @@ export const BaseInfo = {
       id: 4,
       image: "/images/p4.png",
       url: "https://github.com/bochra1/E-commerce-shop",
-      description: "E-commerce platform with product customization. Technologies: Next.js, PostgreSQL, Stripe."
+      description: "E-commerce platform with product customization. Technologies: Next.js, PostgreSQL, Stripe, Jest."
     },
     {
       id: 5,
