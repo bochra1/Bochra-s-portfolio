@@ -31,7 +31,7 @@ const Hero = () => {
               download="Bochra_Labbene_CV.pdf"  // Specify the filename for the download
               className="w-52 md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-blue-900 flex items-center space-x-z"
             >              <span>Download CV</span>
-              <FaDownload />
+              <FaDownload /> 
             </a>
           </div>
 
