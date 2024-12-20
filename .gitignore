@@ -17,7 +17,6 @@
 /.next/
 /out/
 data.ts
-/public
 
 # production
 /build
