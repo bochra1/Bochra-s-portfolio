@@ -90,7 +90,7 @@ export const BaseInfo = {
   export const workData = [
     {
       company: 'Xpermedia',
-      position: 'Front-End Web Developer',
+      position: 'Full-Stack Web Developer',
       icon: '/images/current-company.png',
       mission:"Integrated and enhanced real-time features using WebRTC and WebSocket technologies, including live media streaming, interactive chat, real-time notifications, and dynamic data updates."
     },
