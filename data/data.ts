@@ -108,7 +108,7 @@ export const BaseInfo = {
       mission:"Developed and containerized an online recruitment platform using Docker, ensuring scalability and streamlined deployment."
     },
     {
-      company: 'Mobelite',
+      company: 'Xpermedia',
       position: 'PHP Web Developer Intern',
       icon: '/images/mobilite.png',
       mission:"Developed an application for intern recruitment, enhancing the hiring process and candidate management."
